@@ -85,6 +85,18 @@ header {
   color: var(--accent-color);
 }
 
+.link-nav .icon {
+  margin-right: 10px;
+  fill: currentColor;
+  /* vertical-align: middle; */
+}
+
+/* .link-nav a {
+  display: flex;
+  align-items: center;
+  
+} */
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -178,11 +190,6 @@ header {
   color: var(--primary-white-color);
 }
 
-.contact-svg {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 /* section about*/
 
 .section {
@@ -226,13 +233,24 @@ header {
   margin-right: 0px;
 }
 
-.section-title .item::before {
+.section-title .features-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--main-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+/* .section-title .item::before {
   display: block;
   content: " ";
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-}
+} */
 
 /* чум мы занимаемся */
 .section-about h2 {
@@ -304,7 +322,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -325,14 +343,33 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.social-links {
+/* .list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+} */
+
+.social-list .links {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: currentColor;
   width: 44px;
   height: 44px;
-  color: var(--icon-color);
   border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.links:hover,
+.links:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 /* address */
@@ -515,7 +552,7 @@ header {
   margin-bottom: 50px;
 }
 
-.client-list .client-link {
+.client-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,6 +575,17 @@ header {
 
 .client-list .client-item:nth-child(6n) {
   margin-right: 0px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(-);
+
+  border-color: var(--accent-color);
+}
+
+.icon-socials {
+  fill: currentColor;
 }
 
 /* home work 3 */
