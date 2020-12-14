@@ -130,7 +130,7 @@ header {
 
 /* hero */
 
-.hero-bg {
+.hero {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -145,6 +145,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--second-bg-color);
+  padding: 200px 0;
 }
 
 .hero h1 {
@@ -157,12 +158,10 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
 }
 
 .hero {
   text-align: center;
-  padding-bottom: 200px;
 }
 
 .button {
