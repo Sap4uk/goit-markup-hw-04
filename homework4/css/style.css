@@ -144,6 +144,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--second-bg-color);
 }
 
 .hero h1 {
@@ -156,10 +157,10 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
 }
 
 .hero {
-  padding-top: 200px;
   text-align: center;
   padding-bottom: 200px;
 }
@@ -344,7 +345,14 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.socials-link {
   margin-right: 10px;
+}
+
+.socials-link:nth-child(4) {
+  margin-right: 0;
 }
 
 .social-list {
@@ -447,8 +455,11 @@ header {
 }
 
 .footer-link {
-  fill: currentColor;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social {
+  fill: currentColor;
 }
 
 .footer-socials {
@@ -477,7 +488,7 @@ header {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   border-radius: 4px;
   display: inline-block;
   border: none;
@@ -499,11 +510,13 @@ header {
 
 .button-portfolio:focus {
   color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button-portfolio:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* exampls */
@@ -575,6 +588,11 @@ header {
 
 .cards .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.cards .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* clients */
