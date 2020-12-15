@@ -52,6 +52,10 @@ header {
 .logo-studio {
   color: var(--accent-color);
 }
+
+.studio {
+  color: var(--primary-white-color);
+}
 /* site nav*/
 
 .site-nav .link {
@@ -555,9 +559,6 @@ header {
   padding: 0;
   text-align: left;
 }
-.studio {
-  color: var(--primary-white-color);
-}
 
 .container-button {
   margin-top: 0;
@@ -568,6 +569,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   background: var(--primary-white-color);
+}
+
+.portfolio-title .link {
+  display: block;
 }
 
 .cards .item {
@@ -589,7 +594,8 @@ header {
   margin-bottom: 0;
 }
 
-.cards .item:hover {
+.portfolio-title .link:hover,
+.portfolio-title .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
